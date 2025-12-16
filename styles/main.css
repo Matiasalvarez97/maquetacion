@@ -16,3 +16,61 @@
   --green-100: #dcf8c6;
   --primary-font: "Roboto", sans-serif;
 }
+body{
+    background-color: var(--primary-color);
+    padding: 40px;
+    
+}
+.app{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    height: 100vh;
+}
+aside{
+    background-color: var(--grey-900);
+    color: white;
+}
+aside header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--grey-800);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+gap: 10px;
+
+}
+.profile img{
+    width: 60px;
+    border-radius: 50%;
+}
+.profile h2{
+    font-size: 22px;
+}
+.action{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.action button{
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--grey-800);
+    color: var(--grey-300);
+    transition: transform .2s;
+}
+.action button svg{
+    width: 20px;
+ }
+ .action button:hover{
+    background-color: var(--grey-700);
+    transform: translateY(-4px);
+ }
