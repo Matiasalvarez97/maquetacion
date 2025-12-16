@@ -24,6 +24,7 @@ body{
     
 }
 .app{
+    
     background-color: white;
     display: grid;
     grid-template-columns: 320px 1fr;
@@ -223,4 +224,12 @@ footer .send{
 footer .send:hover{
     background-color: #138b80;
     transform: scale(0.9);
+}
+@media(max-width:880px){
+    .app{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        display: none;
+    }
 }
