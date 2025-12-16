@@ -134,6 +134,34 @@ gap: 10px;
 .chat-header p{
     color: var(--grey-700);
 }
+.chat-panel {
+    display: flex;
+    flex-direction: column;
+}
+.messages{
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.message{
+    background-color: var(--grey-300);
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);  
+}
+.message .time{
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--grey-700);
+    text-align: end;
+}
+.me{
+    align-self: end;
+    background-color:var(--green-100) ;
+}
 footer{
     display: flex;
     background-color: var(--grey-500);
@@ -175,7 +203,7 @@ footer textarea{
     resize: none;
     border-radius: 15px;
     width: 100%;
-    border:none;
+    border: none;
 }
 footer textarea:focus{
     outline: 1px solid var(--grey-700);
