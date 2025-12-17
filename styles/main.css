@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: var(--primary-font);
 }
+
 :root {
   --primary-color: #0a9c6f;
   --grey-900: #0d1919;
@@ -18,11 +19,13 @@
   --green-100: #dcf8c6;
   --primary-font: "Roboto", sans-serif;
 }
+
 body{
     background-color: var(--primary-color);
     padding: 40px;
     
 }
+
 .app{
     
     background-color: white;
@@ -33,10 +36,12 @@ body{
     border-radius: 10px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
+
 aside{
     background-color: var(--grey-900);
     color: white;
 }
+
 aside header{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,24 +51,28 @@ aside header{
     gap: 20px;
     padding: 10px;
 }
+
 .profile{
     display: flex;
     align-items: center;
-gap: 10px;
-
+    gap: 10px;
 }
+
 .profile img{
     width: 60px;
     border-radius: 50%;
 }
+
 .profile h2{
     font-size: 22px;
 }
+
 .action{
     display: flex;
     justify-content: end;
     gap: 10px;
 }
+
 .action button{
     padding: 7px;
     border: none;
@@ -73,17 +82,21 @@ gap: 10px;
     color: var(--grey-300);
     transition: transform .2s;
 }
+
 .action button svg{
     width: 20px;
  }
+
  .action button:hover{
     background-color: var(--grey-700);
     transform: translateY(-4px);
  }
+
  .search{
     background-color: var(--grey-800);
     padding: 5px;
  }
+
  .search form input{
     background-color: var(--grey-900);
     width: 100%;
@@ -94,6 +107,7 @@ gap: 10px;
     outline: none;
     color: white;
  }
+
  .search input:focus {
     outline: 1px solid var(--grey-300);
  }
@@ -104,6 +118,7 @@ gap: 10px;
     flex-direction: column;
     gap: 10px;
  }
+
  .user-chat{
     display: flex;
     background-color: var(--grey-900);
@@ -111,16 +126,19 @@ gap: 10px;
     align-items: center;
     gap: 10px;
  }
+
 .user-chat img{
    border-radius: 50%;
    width: 80px;
    height: 80px;
 }
+
 .user-chat:hover{
     background-color: var(--grey-700);
     cursor: pointer;
     border-left: 3px solid var(--green-300);
 }
+
 .chat-header{
     background-color: var(--grey-300);
     border-bottom: 1px solid var(--grey-500);
@@ -129,18 +147,22 @@ gap: 10px;
     align-items: center;
     gap: 10px;
 }
+
 .chat-header img{
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
+
 .chat-header p{
     color: var(--grey-700);
 }
+
 .chat-panel {
     display: flex;
     flex-direction: column;
 }
+
 .messages{
     padding: 20px;
     flex: 1;
@@ -148,6 +170,7 @@ gap: 10px;
     flex-direction: column;
     gap: 20px;
 }
+
 .message{
     background-color: var(--grey-300);
     padding: 10px;
@@ -155,6 +178,7 @@ gap: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);  
 }
+
 .message .time{
     font-size: 14px;
     margin-top: 10px;
@@ -166,6 +190,7 @@ gap: 10px;
     align-self: end;
     background-color:var(--green-100) ;
 }
+
 footer{
     display: flex;
     background-color: var(--grey-500);
@@ -174,11 +199,13 @@ footer{
     padding: 10px;
     gap: 10px;
 } 
+
 footer button{
     width: 25px;
     height: 25px;
     padding: 3px;
 }
+
 footer svg{
     width: 100%;
     height: 100%;
@@ -187,6 +214,7 @@ footer svg{
 footer form textarea{
     width: 100%;
 }
+
 footer .attach{
     background-color: transparent;
     border: none;
@@ -194,14 +222,17 @@ footer .attach{
     color: var(--grey-700);
     transition: color .2s;
 }
+
 footer .attach:hover{
     color:var(--grey-800)
 }
+
 footer form{
     display: flex;
     align-items: center;
     flex: 1;
 }
+
 footer textarea{
    padding: 8px;
     resize: none;
@@ -209,25 +240,29 @@ footer textarea{
     width: 100%;
     border: none;
 }
+
 footer textarea:focus{
     outline: 1px solid var(--grey-700);
     border: none;
 }
+
 footer .send{
     background-color: #2dca7a;
     border: none;
     color: var(--grey-300);
-    width: 45px;
-    height: 30px;
+    width: 50px;
+    height: 40px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 6px;
     cursor: pointer;
     transition: all .2s;
 }
+
 footer .send:hover{
     background-color: #138b80;
     transform: scale(0.9);
 }
+
 @media(max-width:880px){
     .app{
         grid-template-columns: 1fr;
